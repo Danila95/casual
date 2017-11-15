@@ -1,0 +1,19 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	.text {
+		width: $width-right;
+	}
+
+	h2 {
+	  width: $width-left;
+	}
+
+	ul {
+	  margin-top: 15px;
+	  list-style: disc;
+	  padding-left: 1.2em;
+	}
+}
