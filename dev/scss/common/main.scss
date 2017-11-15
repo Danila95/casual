@@ -40,7 +40,8 @@ footer {
   color: #aaaaaa;
 }
 
-.Pure {
+.casual {
+  display: flex;
   width: 87px;
   height: 29px;
   font-size: 24px;
@@ -49,6 +50,11 @@ footer {
   color: #222222;
   padding: 6px 0 4px 0;
   margin: 9px 0 10px 20px;
+}
+
+.UA {
+  display: flex;
+  flex-direction: column;
 }
 
 .My-menu {

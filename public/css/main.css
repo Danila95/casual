@@ -79,7 +79,11 @@ footer {
   text-align: center;
   color: #aaaaaa; }
 
-.Pure {
+.casual {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 87px;
   height: 29px;
   font-size: 24px;
@@ -88,6 +92,17 @@ footer {
   color: #222222;
   padding: 6px 0 4px 0;
   margin: 9px 0 10px 20px; }
+
+.UA {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .My-menu {
   position: relative;
@@ -244,7 +259,7 @@ A:link {
     position: relative;
     background-color: red;
     border-radius: 50%;
-    z-index: -1; }
+    z-index: 1; }
 
 .about {
   display: -webkit-box;
