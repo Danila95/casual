@@ -65,13 +65,31 @@ td {
 
 .choose {
 	position: relative;
-	background-color: red;
-	border-radius: 50%;
-	z-index: 1;
+	background-color: green;
+	//border-radius: 50%;
+	//z-index: 1;
+
 }
 
-	button {
-		@extend %button;
-	}
+ul {
+  list-style: none;
+  //font-size: 0;
+  //padding: 0;
+  //margin: 1rem 0 0.5rem;
+li {
+  //font-size: 1rem;
+  display: inline;
+  &:not(:first-child){
+    &::before {
+      content: ">";
+      margin: 0 1em;
+    }
+  
+    }
+   }
+}
+	//button {
+		//@extend %button;
+	//}
 }
 
