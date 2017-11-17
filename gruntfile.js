@@ -19,41 +19,21 @@ module.exports = function(grunt) {
       autoprefixer: {
         dist: {
           files: {
-            'public/css/app.css': 'public/css/app.css'
+            'public/css/main.css': 'public/css/main.css'
           }
         }
       },
 			
       watch: {
         css: {
-          files: ['dev/sass/**'],
+          files: ['dev/scss/**'],
           tasks: ['sass', 'autoprefixer'],
         },
 				
         html: {
-          files: ['dev/jade/**'],
+          files: ['dev/pug/**'],
           tasks: ['jade'],
         },
-				
-				js: {
-          files: ['dev/coffee/**'],
-          tasks: ['coffee'],
-				},
-				
-				img: {
-          files: ['dev/img/**'],
-          tasks: ['sync'],
-				},
-
-				fonts: {
-          files: ['dev/fonts/**'],
-          tasks: ['sync'],
-				},
-
-				vendor: {
-          files: ['dev/vendor/**'],
-          tasks: ['sync'],
-				},
 				
         livereload: {
           files: ['public/**'],
@@ -66,7 +46,7 @@ module.exports = function(grunt) {
       sass: {
         dist: {
           files: {
-            'public/css/app.css' : 'dev/sass/app.sass'
+            'public/css/main.css' : 'dev/scss/main.scss'
           }
         }
       },
@@ -81,18 +61,11 @@ module.exports = function(grunt) {
 					},
 					files: [
 						{
-							cwd: 'dev/jade/pages',
+							cwd: 'dev/pug',
 							src: '*.jade',
 							dest: 'public',
 							ext: '.html',
-              expand: true
-						},
-						{
-							cwd: 'dev/jade/templates',
-							src: '*.jade',
-							dest: 'public/templates',
-							ext: '.html',
-              expand: true
+             				expand: true
 						}
 					]
 				}
@@ -144,9 +117,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-clean');
-		grunt.loadNpmTasks('grunt-sync');
+	grunt.loadNpmTasks('grunt-sync');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['clean', 'sass', 'autoprefixer', 'jade', 'coffee', 'sync', 'connect', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'jade', 'connect', 'watch']);
 
 };

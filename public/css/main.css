@@ -61,12 +61,10 @@ h3 {
 
 .content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1080px;
   margin: auto; }
 
@@ -83,7 +81,6 @@ footer {
 
 .casual {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 87px;
@@ -97,28 +94,24 @@ footer {
 
 .UA {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .My-menu {
   position: relative;
   width: 100%;
   height: 48px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid gray;
   -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline; }
+      -ms-flex-align: baseline;
+          align-items: baseline; }
 
 .Women-Men-Kids-Sport-Brands {
   width: 335px;
@@ -126,31 +119,27 @@ footer {
   font-size: 16px;
   color: #222222;
   margin: 15px 0 7px 40px;
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
-  align-self: center; }
+      align-self: center; }
 
 .Search {
   width: 59px;
   height: 19px;
   font-size: 16px;
   color: #888888;
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   margin: 15px 0 7px 61px; }
 
 .Log-in-My-cart {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
 
 .Log-in {
   width: 50px;
@@ -215,7 +204,6 @@ A:link {
 
 .color h3 {
   margin-bottom: 11px; }
-
 .color button {
   width: 60px;
   height: 63px;
@@ -229,13 +217,11 @@ A:link {
 
 .product-details {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .product-details .breadcrumbs {
     width: 150px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 40px 0 25px 0;
@@ -252,19 +238,16 @@ A:link {
         width: 0.36em;
         height: 0.57em;
         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+                transform: translateY(-50%); }
   .product-details .configuration {
     width: 460px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .product-details .size {
     font-weight: 900;
     margin-top: 30px;
@@ -281,17 +264,16 @@ A:link {
     padding: 0 6px 19px 0; }
   .product-details .choose {
     position: relative;
-    background-color: green; }
+    background-color: blue;
+    border-radius: 50%; }
 
 .about {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%; }
   .about .text {
     width: 460px; }
