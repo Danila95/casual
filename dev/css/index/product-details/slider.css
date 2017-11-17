@@ -1,0 +1,19 @@
+.slider {
+  margin: 39px 43px 82px 0;
+  width: 569px;
+  height: 660px;
+  position: relative; }
+  .slider img {
+    width: 569px;
+    height: 660px; }
+  .slider .img {
+    position: absolute;
+    display: none; }
+  .slider .img.curry {
+    display: block; }
+  .slider .img:first-child {
+    width: 569px;
+    background: #CA0F1F; }
+  .slider .img:nth-child(2) {
+    width: 569px;
+    background: #0ADD75; }

@@ -8,6 +8,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.2.1/jquery-3.2.1.js"></script>
+    <script src="js/slider.js"></script>
   </head>
   <body>
     <header>
@@ -26,75 +28,77 @@
       </div>
     </header>
     <div class="Casual-01-PDP">
-      <main class="content"></main>
-      <div class="product-details">
-        <div class="image"><img src="img/beige.jpg"></div>
-        <div class="configuration">
-          <div class="breadcrumbs">
-            <ul>
-              <li><a href="#">Home </a></li>
-              <!--|&nbsp;&nbsp;>&nbsp;&nbsp;-->
-              <li><a href="#">Men</a></li>
-              <!--|&nbsp;&nbsp;>&nbsp;&nbsp;-->
-              <li><span>Shoes</span></li>
+      <main class="content">
+        <div class="product-details">
+          <!--.prev-n a(href="#") prev 
+          -->
+          <!--.image//img(src="img/beige.jpg")
+          -->
+          <div class="slider">
+            <div class="img-currvy"><img src="img/beige.jpg"></div>
+            <div class="img"><img src="img/green.jpg"></div>
+          </div>
+          <!--.next-n a(href="#") next 
+          -->
+          <div class="configuration">
+            <nav class="breadcrumbs"><a href="#">Home 							</a><a href="#">Men</a><span>Shoes</span></nav>
+            <h1>Crazylight Boost Low 2016 Shoes</h1><span class="cost">$9.90</span>
+            <div class="color">
+              <h3>Color</h3>
+              <div class="buttons">
+                <button><img src="img/beige.jpg"></button>
+                <button><img src="img/green.jpg"></button>
+              </div>
+            </div>
+            <div class="size">
+              <h3>Size</h3>
+              <table class="size-selector">
+                <tr>
+                  <td class="choose">4</td>
+                  <td>4.5</td>
+                  <td>5</td>
+                  <td>5.5</td>
+                  <td>6</td>
+                  <td>6.5</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>7.5</td>
+                  <td>8</td>
+                  <td>8.5</td>
+                  <td>9</td>
+                  <td>9.5</td>
+                  <td>10</td>
+                  <td>10.5</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>11.5</td>
+                  <td>12</td>
+                  <td>12.5</td>
+                  <td>13</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <h2>Stan Smith sneakers made in&nbsp;vintage-look suede.</h2>
+          <div class="text">
+            <p>The Stan Smith debuted as a pro-level tennis sneaker in the '70s. It wasn't long before its crisp, clean aesthetic made it a crossover favorite off the court. These men's shoes update the timeless look with a suede upper. Featuring perforated 3-Stripes and the iconic rubber cupsole.</p>
+            <ul> 
+              <li>Suede upper </li>
+              <li>Perforated 3-Stripes; Stan Smith logo on tongue </li>
+              <li>Leather lining</li>
+              <li>Enjoy the comfort and performance of OrthoLite® sockliner </li>
+              <li>Logo on heel tab</li>
+              <li>Rubber cupsole</li>
+              <li>Imported</li>
             </ul>
           </div>
-          <h1 class="crazylight-boost-low">Crazylight Boost Low 2016 Shoes</h1><span class="cost">$9.90</span>
-          <div class="color">
-            <h3>Color</h3>
-          </div>
-          <div class="buttons">
-            <button><img src="img/beige.jpg"></button>
-            <button><img src="img/green.jpg"></button>
-          </div>
-          <div class="size">
-            <h3>Size</h3>
-          </div>
-          <table class="size-selector">
-            <tr>
-              <td class="choose">4</td>
-              <td>4.5</td>
-              <td>5</td>
-              <td>5.5</td>
-              <td>6</td>
-              <td>6.5</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>7.5</td>
-              <td>8</td>
-              <td>8.5</td>
-              <td>9</td>
-              <td>9.5</td>
-              <td>10</td>
-              <td>10.5</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>11.5</td>
-              <td>12</td>
-              <td>12.5</td>
-              <td>13</td>
-            </tr>
-          </table>
         </div>
-      </div>
-      <div class="about">
-        <h2>Stan Smith sneakers made in&nbsp;vintage-look suede.</h2>
-        <div class="text">
-          <p>The Stan Smith debuted as a pro-level tennis sneaker in the '70s. It wasn't long before its crisp, clean aesthetic made it a crossover favorite off the court. These men's shoes update the timeless look with a suede upper. Featuring perforated 3-Stripes and the iconic rubber cupsole.</p>
-          <ul> 
-            <li>Suede upper </li>
-            <li>Perforated 3-Stripes; Stan Smith logo on tongue </li>
-            <li>Leather lining</li>
-            <li>Enjoy the comfort and performance of OrthoLite® sockliner </li>
-            <li>Logo on heel tab</li>
-            <li>Rubber cupsole</li>
-            <li>Imported</li>
-          </ul>
-        </div>
-      </div>
-      <footer>Casual</footer>
+        <footer>Casual</footer>
+      </main>
     </div>
   </body>
 </html>

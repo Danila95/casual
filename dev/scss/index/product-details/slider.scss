@@ -1,0 +1,30 @@
+.slider {
+		margin: 39px 43px 82px 0;
+		width:: $width-left;
+  		height: 660px;
+  		position: relative;
+	
+
+	img {
+	  		width: 569px;
+	  		height: 660px;
+	}
+	.img {
+			position:absolute;
+			display: none;
+		}
+
+	.img.curry{
+			display: block;
+	}
+
+	.img:first-child {
+			width: 569px;
+			background: #CA0F1F
+		}
+
+	.img:nth-child(2) {
+			width: 569px;
+			background: #0ADD75
+		}
+}
