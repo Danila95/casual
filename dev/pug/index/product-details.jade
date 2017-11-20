@@ -1,51 +1,66 @@
 .product-details
-				//.prev-n 
-					a(href="#") prev 
-				//.image
-					//img(src="img/beige.jpg")
-				.slider
-					.img-currvy
-						img(src="img/beige.jpg")
-					.img
-						img(src="img/green.jpg")
-				//.next-n 
-					a(href="#") next 
-				.configuration
-					nav.breadcrumbs
-						a(href="#") Home 							
-						a(href="#") Men
-						span Shoes
-					h1 Crazylight Boost Low 2016 Shoes
-					span.cost $9.90
-					.color
-						h3 Color
-						.buttons
-							button
-								img(src="img/beige.jpg")
-							button
-								img(src="img/green.jpg")
-					.size
-						h3 Size
-						table.size-selector
-							tr
-								td.choose 4
-								td 4.5
-								td 5
-								td 5.5
-								td 6
-								td 6.5
-								td 7
-							tr
-								td 7.5
-								td 8
-								td 8.5
-								td 9
-								td 9.5
-								td 10
-								td 10.5
-							tr
-								td 11
-								td 11.5
-								td 12
-								td 12.5
-								td 13
+	.all-slider
+		.prev.n 
+			a(href="#")
+				img(src="img/breadcrumbs-arrow.svg", alt="")
+
+		.slider
+			.img.curry
+				img(src="img/beige.jpg")
+			.img
+				img(src="img/green.jpg")
+		.next.n
+			a(href="#")
+				img(src="img/breadcrumbs-arrow.svg", alt="")
+				
+	.configuration
+		nav.breadcrumbs
+			a(href="#") Home 							
+			a(href="#") Men
+			span Shoes
+		h1 Crazylight Boost Low 2016 Shoes
+		span.cost $9.90
+		.color
+			h3 Color
+			.buttons
+				checkbox
+					img(src="img/beige.jpg")
+				checkbox
+					img(src="img/green.jpg")
+		.size
+			h3 Size
+			.size-selector
+				//.choose 4
+				span 4.5&nbsp;&nbsp;&nbsp;&nbsp;
+				span 5&nbsp;&nbsp;&nbsp;&nbsp;5.5&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;6.5&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;7.5&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;8.5&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;9.5&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;10.5&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;11.5&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;12.5&nbsp;&nbsp;&nbsp;&nbsp;13
+		//.size
+			h3 Size
+			table.size-selector
+				tr
+					td.choose 4
+					td 4.5
+					td 5
+					td 5.5
+					td 6
+					td 6.5
+					td 7
+				tr
+					td 7.5
+					td 8
+					td 8.5
+					td 9
+					td 9.5
+					td 10
+					td 10.5
+				tr
+					td 11
+					td 11.5
+					td 12
+					td 12.5
+					td 13
+
+		//.button
+		//.button-1
+		button(type="submit" name="Send") Add to bag
+		.button-2
+			button(type="submit" name="Send") 1-click checkout

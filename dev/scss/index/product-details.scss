@@ -32,7 +32,6 @@
 		width: $width-right;
 		display: flex;
 		flex-direction: column;
-	}
 
 	.size {
 	  font-weight: 900;
@@ -41,8 +40,11 @@
 	}
 
 	.size-selector {
+		display: inline-block;
 		width: 274px;
 		height: 97px;
+		font-size: 14px;
+		//text-align: center;
 	}
 
 	table {
@@ -56,20 +58,16 @@
 		padding: 0 6px 19px 0;
 	}
 
-	
-
 	.choose {
 		position: relative;
-		background-color: red;
+		background-color: blue;
 		border-radius: 50%;
 		//z-index: 1;
 	}
 
-
-	 
-
-		//button {
-		//	@extend %button;
-		//}
+		button {
+			@extend %button;
+		}
 	}
+}
 

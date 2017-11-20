@@ -1,4 +1,23 @@
 %button {
-  display: block;
+  	display: block;
+  	width: 467px;
+  	height: 58px;
+  	font-size: 20px;
+  	font-weight: 900;
+  	line-height: 2.9;
+  	text-align: center;
+  	color: #ffffff;
+	padding: 0 1em ;
+	line-height: 36px;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 2px solid blue;
+	background-color: blue;
+	margin-top: 9px;
 
+	.button-2 {
+		margin-bottom: 9px;
+		border: 2px solid black;
+		background-color: black;
+	}
 }

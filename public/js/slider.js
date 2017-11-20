@@ -16,6 +16,16 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.prev')
+	$('.prev').click(function(){
+		var currentImage=$('.img.curry');
+		var currentImageIndex=$('.img.curry').index();
+		var prevImageIndex=currentImageIndex - 1;
+		var prevImage= $('.img').eq(prevImageIndex);
 
+		currentImage.fadeOut(1000);
+		currentImage.removeClass('curry');
+		prevImage.fadeIn(1000);
+		prevImage.addClass('curry');
+	});
+	
 });
