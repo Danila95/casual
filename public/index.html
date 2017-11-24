@@ -8,8 +8,6 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3.2.1/jquery-3.2.1.min.js"></script>
-    <script src="js/slider.js"></script>
   </head>
   <body>
     <header>
@@ -30,13 +28,17 @@
     <div class="Casual-01-PDP">
       <main class="content">
         <div class="product-details">
-          <div class="all-slider">
-            <div class="prev n"> <a href="#"><img src="img/breadcrumbs-arrow.svg" alt=""></a></div>
-            <div class="slider">
-              <div class="img curry"><img src="img/beige.jpg"></div>
-              <div class="img"><img src="img/green.jpg"></div>
+          <div class="slider" data-slider>
+            <div class="nav">
+              <button class="prev" data-slider-nav="prev" disabled>Предыдущий слайд</button>
+              <button class="next" data-slider-nav="next">Следующий слайд</button>
             </div>
-            <div class="next n"><a href="#"><img src="img/breadcrumbs-arrow.svg" alt=""></a></div>
+            <div class="wrap" data-slider-wrap>
+              <div class="slide" style="background-image: url(img/beige.jpg);"></div>
+              <div class="slide" style="background-image: url(img/green.jpg);"></div>
+              <div class="slide" style="background-image: url(img/beige.jpg);"></div>
+              <div class="slide" style="background-image: url(img/green.jpg);"></div>
+            </div>
           </div>
           <div class="configuration">
             <nav class="breadcrumbs"><a href="#">Home 							</a><a href="#">Men</a><span>Shoes</span></nav>
@@ -44,14 +46,36 @@
             <div class="color">
               <h3>Color</h3>
               <div class="buttons">
-                <checkbox><img src="img/beige.jpg"></checkbox>
-                <checkbox><img src="img/green.jpg"></checkbox>
+                <checkbox>
+                  <!--input(type="checkbox")--><img src="img/beige.jpg">
+                </checkbox>
+                <checkbox>
+                  <!--input(type="checkbox")--><img src="img/green.jpg">
+                </checkbox>
               </div>
             </div>
             <div class="size">
               <h3>Size</h3>
               <div class="size-selector">
-                <!--.choose 4--><span>4.5&nbsp;&nbsp;&nbsp;&nbsp;</span><span>5&nbsp;&nbsp;&nbsp;&nbsp;5.5&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;6.5&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;7.5&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;8.5&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;9.5&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;10.5&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;11.5&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;12.5&nbsp;&nbsp;&nbsp;&nbsp;13</span>
+                <button class="choose">4</button>
+                <button>4.5</button>
+                <button>5</button>
+                <button>5.5</button>
+                <button>6</button>
+                <button>6.5</button>
+                <button>7</button>
+                <button>7.5</button>
+                <button>8</button>
+                <button>8.5</button>
+                <button>9</button>
+                <button>9.5</button>
+                <button>10</button>
+                <button>10.5</button>
+                <button>11</button>
+                <button>11.5</button>
+                <button>12</button>
+                <button>12.5</button>
+                <button>13</button>
               </div>
             </div>
             <!--.size
@@ -79,13 +103,10 @@
             		td 12
             		td 12.5
             		td 13
-            
             -->
-            <!--.button-->
-            <!--.button-1-->
-            <button type="submit" name="Send">Add to bag</button>
-            <div class="button-2">
-              <button type="submit" name="Send">1-click checkout</button>
+            <div class="buy-buttons">
+              <button>Add to bag</button>
+              <button class="one-click">1-click checkout</button>
             </div>
           </div>
         </div>
@@ -107,5 +128,7 @@
         <footer>Casual</footer>
       </main>
     </div>
+    <script src="js/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

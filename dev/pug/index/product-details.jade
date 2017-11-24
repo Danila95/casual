@@ -1,18 +1,13 @@
 .product-details
-	.all-slider
-		.prev.n 
-			a(href="#")
-				img(src="img/breadcrumbs-arrow.svg", alt="")
-
-		.slider
-			.img.curry
-				img(src="img/beige.jpg")
-			.img
-				img(src="img/green.jpg")
-		.next.n
-			a(href="#")
-				img(src="img/breadcrumbs-arrow.svg", alt="")
-				
+	.slider(data-slider)
+		.nav
+			button.prev(data-slider-nav="prev" disabled) Предыдущий слайд
+			button.next(data-slider-nav="next") Следующий слайд
+		.wrap(data-slider-wrap)
+			.slide(style="background-image: url(img/beige.jpg);")
+			.slide(style="background-image: url(img/green.jpg);")
+			.slide(style="background-image: url(img/beige.jpg);")
+			.slide(style="background-image: url(img/green.jpg);")
 	.configuration
 		nav.breadcrumbs
 			a(href="#") Home 							
@@ -24,15 +19,33 @@
 			h3 Color
 			.buttons
 				checkbox
+					//input(type="checkbox")
 					img(src="img/beige.jpg")
 				checkbox
+					//input(type="checkbox")
 					img(src="img/green.jpg")
 		.size
 			h3 Size
 			.size-selector
-				//.choose 4
-				span 4.5&nbsp;&nbsp;&nbsp;&nbsp;
-				span 5&nbsp;&nbsp;&nbsp;&nbsp;5.5&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;6.5&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;7.5&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;8.5&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;9.5&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;10.5&nbsp;&nbsp;&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;11.5&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;12.5&nbsp;&nbsp;&nbsp;&nbsp;13
+				button.choose 4
+				button 4.5
+				button 5
+				button 5.5
+				button 6
+				button 6.5
+				button 7
+				button 7.5
+				button 8
+				button 8.5
+				button 9
+				button 9.5
+				button 10
+				button 10.5
+				button 11
+				button 11.5
+				button 12
+				button 12.5
+				button 13
 		//.size
 			h3 Size
 			table.size-selector
@@ -58,9 +71,6 @@
 					td 12
 					td 12.5
 					td 13
-
-		//.button
-		//.button-1
-		button(type="submit" name="Send") Add to bag
-		.button-2
-			button(type="submit" name="Send") 1-click checkout
+		.buy-buttons
+			button Add to bag
+			button.one-click 1-click checkout

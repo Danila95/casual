@@ -1,13 +1,18 @@
 @import "product-details/slider";
 @import "product-details/color";
+@import "product-details/size";
 
 .product-details {
+	margin-top: 40px;
 	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 84px;
 
 	.breadcrumbs {
   		width: 150px;
   		display: flex;
-  		margin: 40px 0 25px 0;
+  		margin: 0 0 25px 0;
   		font-size: 14px;
 
   		 a {	
@@ -33,41 +38,15 @@
 		display: flex;
 		flex-direction: column;
 
-	.size {
-	  font-weight: 900;
-	  margin-top: 30px;
-	  margin-bottom: 12px;
-	}
+	.buy-buttons button {
+		@extend %button;
+		width: 100%;
+		margin-top: 9px;
 
-	.size-selector {
-		display: inline-block;
-		width: 274px;
-		height: 97px;
-		font-size: 14px;
-		//text-align: center;
-	}
-
-	table {
-		font-size: 14px;
-		text-align: center;
-	}
-
-	td {
-		width: 34px;
-		height: 17px;
-		padding: 0 6px 19px 0;
-	}
-
-	.choose {
-		position: relative;
-		background-color: blue;
-		border-radius: 50%;
-		//z-index: 1;
-	}
-
-		button {
-			@extend %button;
+		&.one-click {
+			background-color: #333;
 		}
+	}
 	}
 }
 
