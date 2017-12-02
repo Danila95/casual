@@ -1,25 +1,20 @@
-header
-	.My-menu
-		.casual
-			img(src="img/logo.jpg")
-		.Women-Men-Kids-Sport-Brands
+header.menu
+	.nav
+		a.logo(href="#") Casual
+		.categories
 			a(href="#") Women
-			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			a(href="#") Men
-			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			a(href="#") Kids
-			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			a(href="#") Sports
-			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			a(href="#") Brands
-		.Search
-			h3 Search...
-		.Log-in-My-cart
-			.My-cart
-				a(href="#") My cart
-				.notification
-					span 2
-			.Log-in
-				a(href="#") Log in
+		form.search 
+			.text-input
+				input(placeholder="Search...", type="text") 
+	.user
+		a(href="#") Log in
+		.my-cart
+			a(href="#") My cart
+			span.notification 2
+		
 
 			

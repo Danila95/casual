@@ -1,0 +1,28 @@
+@import "ui/products/product-item";
+
+.other-products-block {
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 84px;
+
+	.products {
+		display: grid;
+		grid-template-columns: repeat(5,180px);
+		justify-content: space-between;
+		//flex-wrap: wrap;
+		
+
+		list-style: none;
+		font-size: 14px;
+		text-align: justify;
+	}
+
+	.products-name {
+		margin-top: 10px;
+		height: 40px;
+	}
+	
+	.product {
+		@extend %products-item;
+	}
+}

@@ -1,0 +1,27 @@
+.other-products-block
+	h1 You might also like
+	ul.products
+		mixin product(image="other1",name="Stan Smith shoes", price="$90")
+			li.product
+				img(src="img/"+image+".jpg")
+				h3.products-name= name
+				.products-price= price
+
+		+product("other1","Stan Smith shoes")
+		+product("other2","Crazylight Boost Low 2016 Shoes")
+		+product("other1","Gazelle shoes")
+		+product("other1", "Stan Smith shoes")
+		+product("other2","Stan Smith shoes")
+
+		+product("other1","Stan Smith shoes")
+		+product("other2","Stan Smith shoes")
+		+product("other1","Gazelle shoes")
+		+product("other2","Stan Smith shoes")
+		+product("other1","Stan Smith shoes")
+
+		+product("other2","Stan Smith shoes")
+		+product("other1","Stan Smith shoes")
+		+product("other2","Gazelle shoes")
+		+product("other1","Stan Smith shoes")
+		+product("other2","Stan Smith shoes")
+

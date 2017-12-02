@@ -1,0 +1,53 @@
+.menu {
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid gray;
+	justify-content: space-between;
+	line-height: 48px;
+	padding: 0 20px;
+	box-sizing: border-box;
+
+	.nav, .user {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+	  display: block;
+	  width: 74px;
+	  height: 28px;
+	  font-size: 0;
+	  background: url("../img/logo.svg") center/contain no-repeat;
+	  margin-right: 50px; 
+	}
+
+	.categories {
+		margin-right: 60px;
+
+	  	a {
+		  	margin-right: 28px;
+
+		  	&:last-child { margin-right: 0; }
+		  	&:nth-child(3) { margin-right: 50px; }
+		  }
+	}
+
+	.my-cart {
+		position: relative;
+		margin-left: 30px;
+	}
+
+	.notification {
+	  position: absolute;
+	  background-color: $color-active;
+	  width: 14px;
+	  line-height: 14px;
+	  border-radius: 50%;
+	  font-size: 10px;
+	  text-align: center;
+	  color: white;
+	  top: 10px;
+	  right: -10px;
+	}
+
+}
