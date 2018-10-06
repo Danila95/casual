@@ -3,6 +3,10 @@
 - Это моя первая большая тестовая работа для начинающего front-end разработчика. Это статическая веб-страница простого интернет магазина. Версия 2.0. Старую версию этой страницы (версия 1.0) вы можете найти в этом репозитории https://github.com/Danila95/pure. В этой версии были переделаны многие элементы из старой верстке, а также были добавлены много новых элементов (Например: элемент Grid). Также был добавлен слайдер, который написан на JS библиотекой Jquery.
 - It's my first big test work for beginner front-end development. This is my static webpage simply online store "Casual". Version 2.0. Old version of the webpage (version 1.0) you can see in this repository https://github.com/Danila95/pure. In this version, many elements from the old layout were remade. Many new elements have also been added (For example: Grid element). Also a slider has been added that is written in JS by the jQuery library.
 
+## Link of work
+
+https://rawcdn.githack.com/Danila95/casual/master/public/index.html
+
 ## What software was used
 
 <div>
